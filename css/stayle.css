@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600&family=Roboto:ital,wght@1,900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Alexandria', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --black-color: #444444;
+    --white-color: #ffffff;
+}
+.ahaded{
+    --black-color: #ffffff;
+    --white-color: #000000;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--black-color);
+    border-radius: 20%;
+}
+html{
+    overflow-x: hidden;
+    font-size: 61.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--white-color);
+}
+section{
+    padding: 2rem 9%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9%;
+    background-color: var(--black-color);
+    box-shadow: 10px 1px 50px rgba(150, 149, 149, 0.199);
+}
+.header .logo{
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: bolder;
+}
+.header .logo span{
+    color: red;
+}
+.header .navbar i{
+    margin: 0 5px;
+    font-size: 2rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--white-color);
+}
+.header .navbar i:hover{
+    background-color: transparent;
+    color: var(--white-color);
+}
+#menu-ions{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+}
+/* ---------------------text------------------ */
+.text h1{
+    font-family: 'Alexandria', sans-serif;
+    text-align: center;
+    padding: 2rem 9%;
+    font-size: 2.9rem;
+    color: var(--black-color);
+}
+/* --------------------HOME--------------------------- */
+.home .h11{
+    text-align: center;
+    background-color: var(--white-color);
+    padding: 10px;
+    border-bottom: 1px solid var(--black-color);
+    color: red;
+    font-size: 2.5rem;
+    font-family: 'Alexandria', sans-serif;
+}
+.home .box-videi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.home .box-videi img{
+    height: 20rem;
+    cursor: pointer;
+}
+/* -------------Breaking Bad----------------------- */
+.text-2{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: end;
+    background-color: var(--white-color);
+}
+.text-2 h1{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 35px;
+    color: var(--black-color);
+}
+.text-2 .h1{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 35px;
+    text-align: center;
+    color: var(--black-color);
+}
+.text-2 .box-2 .p{
+    font-size: 1.3rem;
+    line-height: 35px;
+    color: var(--black-color);
+}
+.text-2 .box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.text-2 .box-2 .text-5 img{
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.text-2 .box-2 .tilt{
+    height: 46rem;
+    border: 3px solid red;
+}
+/* ------------------------------------------ */
+
+.imahge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* ---------------------------------------------- */
+
+.text-23 h1{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 35px;
+    text-align: center;
+    color: var(--black-color);
+    padding: 20px;
+}
+.text-23 .box-50{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    padding: 10px;
+    text-align: end;
+    background-color: var(--white-color);
+    overflow-x: hidden;
+    border-top: none;
+}
+.text-23 .box-50 .box-20 p{
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.text-23 .box-50 .box-20 p:hover{
+    color: red;
+}
+.text-23  .box-20 img{
+    height: 20rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* ------------------curus-------------------- */
+.curus{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+.curus2{
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: #222;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: color 8s infinite;
+}
+/* -------------btn---------- */
+.btn{
+    font-size: 2rem;
+    color: rgb(0, 68, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+.titile.fade-out{
+    top: -110%;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and  (max-width:500px){
+    html{
+        overflow-y: hidden;
+    }
+    .text-2 .box-2 .tilt{
+        height: 18rem;
+    }
+    .text-23  .box-20 img{
+        position: relative;
+        right: 38px;
+    }
+    .btn{
+        display: block;
+    }
+    #menu-ions{
+        display: inline;
+    }
+}
+@media screen and  (min-width:700px){
+    .text-2 .box-2 .tilt{
+        height: 25rem;
+    }
+    .text-23  .box-20 img{
+        position: relative;
+        right: 20px;
+    }
+    #menu-ions{
+        display: inline;
+        padding: 6px;
+        background-color: var(--white-color);
+        color: var(--black-color);
+    }
+}
+@media screen and  (max-width:380px){
+    .text-2 .box-2 .tilt{
+        height: 15rem;
+    }
+    .text-23  .box-20 img{
+        position: relative;
+        right: 30px;
+    }
+    #menu-ions{
+        display: inline;
+        padding: 6px;
+        background-color: var(--white-color);
+        color: var(--black-color);
+    }
+}
+@media screen and  (max-width:720px){
+    .text-2 .box-2 .tilt{
+        height: 32rem;
+    }
+    .text-23  .box-20 img{
+        position: relative;
+        right: 25px;
+    }
+    #menu-ions{
+        display: inline;
+        padding: 6px;
+        background-color: var(--white-color);
+        color: var(--black-color);
+    }
+}
+@media screen and (max-width:415px){
+    .text-2 .box-2 .tilt{
+        height: 32rem;
+    }
+    .text-23  .box-20 img{
+        position: relative;
+        right: 45px;
+    }
+    #menu-ions{
+        display: inline;
+        padding: 6px;
+        background-color: var(--white-color);
+        color: var(--black-color);
+    }
+}
